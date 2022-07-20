@@ -128,7 +128,7 @@ function Post({ post }: Props) {
 
     if (votes?.length == 0) return 0;
     if (displayNumber == 0) {
-      return votes[0]?.upvote ? 1 : 0;
+      return votes[0]?.upvote ? 1 : -1;
     }
 
     return displayNumber;
