@@ -192,7 +192,7 @@ function PostBox({ subreddit, open }: Props) {
                 : `Create a post by entering a title`
               : `Sign in to post`
           }
-          className="rounded-md flex-1 bg-gray-50 p-2 pl-5 outline-none"
+          className="rounded-md flex-1 bg-gray-50 p-2 pl-5 outline-none truncate"
           disabled={!session}
         />
 

@@ -194,7 +194,9 @@ function Post({ post }: Props) {
               <ChatAltIcon className="h-6 w-6" />
               <p className="text-xs md:text-sm">
                 {post.commentList.length}{" "}
-                {post.commentList.length === 1 ? "Comment" : "Comments"}
+                <span className="hidden md:inline">
+                  {post.commentList.length === 1 ? "Comment" : "Comments"}
+                </span>
               </p>
             </div>
             <div className="postButtons">

@@ -57,7 +57,7 @@ function Header({ open, setOpen }: Props) {
         <input
           type="text"
           placeholder="Search Reddit"
-          className="flex-1 bg-transparent outline-none"
+          className="flex-1 bg-transparent outline-none hidden md:inline"
         />
         <input type="submit" hidden />
       </form>
