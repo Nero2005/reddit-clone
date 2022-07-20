@@ -14,11 +14,11 @@ function Subreddit({ open }: Props) {
     query: { topic },
   } = useRouter();
   return (
-    <div className={`h-24 bg-red-400 p-8`}>
+    <div className={`h-24 bg-red-400 p-4`}>
       <Head>
         <title>r/{topic}</title>
       </Head>
-      <div className="-mx-8 mt-10 bg-white">
+      <div className="-mx-4 mt-10 bg-white">
         <div className="mx-auto flex max-w-5xl items-center space-x-4 pb-3">
           <div className="-mt-5">
             <Avatar seed={topic as string} large />
@@ -33,7 +33,7 @@ function Subreddit({ open }: Props) {
         </div>
       </div>
 
-      <div className="mx-auto max-w-5xl mt-5 pb-10">
+      <div className="max-w-5xl mt-5 pb-10">
         <PostBox subreddit={topic as string} open={open} />
         <Feed topic={topic as string} />
       </div>

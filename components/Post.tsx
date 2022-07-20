@@ -167,7 +167,7 @@ function Post({ post }: Props) {
             }`}
           />
         </div>
-        <div className="p-3 pb-1">
+        <div className="p-2 pb-1">
           {/* Header */}
           <div className="flex items-center space-x-2">
             <Avatar seed={post.subreddit[0]?.topic} />
@@ -189,7 +189,7 @@ function Post({ post }: Props) {
           {/* Image */}
           <img src={imageUrl ? imageUrl : ""} className="w-full" alt="" />
           {/* Footer */}
-          <div className="flex space-x-4 text-gray-400">
+          <div className="flex space-x-4 text-gray-400 ml-0">
             <div className="postButtons">
               <ChatAltIcon className="h-6 w-6" />
               <p className="text-xs md:text-sm">
